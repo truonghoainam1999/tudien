@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var english = ['hello' , 'goodbye' , 'today' , 'yesterday' , 'tonight' ,'tomorrow' , 'morning' , 'afternoon' , 'evening'];
+        var tiengviec = ['xin chào' , 'tạm biệt ' , 'hôm nay' , 'hôm qua' , 'tối nay' , 'ngày mai' ,'buổi sáng' ,'buổi chiều' ,'buổi tối'];
+        var findWord = prompt('Từ cần dịch :');
+        var index ;
+            for(var i = 0 ; i <= english.length ; i++){
+                if(english[i] == findWord){
+                    index = i ;
+                    break ;
+                }else{
+                    index = -1 ;
+                }
+                
+            }
+            if(index !== -1){
+                alert(`${findWord} có nghĩa là : ${tiengviec[index]}`)
+            }else{
+                alert('Từ này chưa có trong từ điển :')
+            }
+            
+    </script>
+</body>
+</html>
